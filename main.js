@@ -65,40 +65,40 @@ for (let i = 0; i < 2; i++) {
 };
 
 // цикл while
-let k = 0;
-while (k < 2) {
-  let a = prompt("Введите обязательную статью расходов в этом месяце?");
-  let b = prompt("Во сколько обойдется?");
+// let k = 0;
+// while (k < 2) {
+//   let a = prompt("Введите обязательную статью расходов в этом месяце?");
+//   let b = prompt("Во сколько обойдется?");
 
-  if (typeof(a) === 'string' && typeof(a) != null && typeof(a) != null && a != '' && b != '' &&  a.length < 50) {
-    console.log("done");
-    appData.expenses[a] = b;
-  } else {
-    console.log("плохо");
-    k--;
-  }
+//   if (typeof(a) === 'string' && typeof(a) != null && typeof(a) != null && a != '' && b != '' &&  a.length < 50) {
+//     console.log("done");
+//     appData.expenses[a] = b;
+//   } else {
+//     console.log("плохо");
+//     k--;
+//   }
 
-  k++;
-}
+//   k++;
+// }
 
 //цикл do while
-let t = 0;
+// let t = 0;
 
-do {
-  let a = prompt("Введите обязательную статью расходов в этом месяце?");
-  let b = prompt("Во сколько обойдется?");
+// do {
+//   let a = prompt("Введите обязательную статью расходов в этом месяце?");
+//   let b = prompt("Во сколько обойдется?");
 
-  if (typeof(a) === 'string' && typeof(a) != null && typeof(a) != null && a != '' && b != '' &&  a.length < 50) {
-    console.log("done");
-    appData.expenses[a] = b;
-  } else {
-    console.log("плохо");
-    t--;
-  }
+//   if (typeof(a) === 'string' && typeof(a) != null && typeof(a) != null && a != '' && b != '' &&  a.length < 50) {
+//     console.log("done");
+//     appData.expenses[a] = b;
+//   } else {
+//     console.log("плохо");
+//     t--;
+//   }
 
-  t++;
-}
-while (t < 2);
+//   t++;
+// }
+// while (t < 2);
 
 
 appData.moneyPerDay = appData.budget/30;
@@ -130,7 +130,6 @@ if (appData.moneyPerDay < 100) {
 // с помощью команды console.log();
 
 console.log(typeof null);
-console.log(typeof NaN);
 
 // Какая функция операторов || и &&?
 // Логическое 'или' || и логическое 'и' &&. Бинарные операторы, один возвращает true, когда верно хоть одно утверждение, потом и 'или', а второй
