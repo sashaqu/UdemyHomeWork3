@@ -55,7 +55,7 @@ for (let i = 0; i < 2; i++) {
   let a = prompt("Введите обязательную статью расходов в этом месяце?");
   let b = prompt("Во сколько обойдется?");
 // Потому, что при отмене promt возвращает null
-  if ((typeof(a)) === 'string' && (typeof(a != null)) && (typeof(a != null)) && a != '' && b != '' &&  a.length < 50) {
+  if (typeof(a) === 'string' && typeof(a) != null && typeof(a) != null && a != '' && b != '' &&  a.length < 50) {
     console.log("done");
     appData.expenses[a] = b;
   } else {
@@ -70,7 +70,7 @@ while (k < 2) {
   let a = prompt("Введите обязательную статью расходов в этом месяце?");
   let b = prompt("Во сколько обойдется?");
 
-  if ((typeof(a)) === 'string' && (typeof(a != null)) && (typeof(a != null)) && a != '' && b != '' &&  a.length < 50) {
+  if (typeof(a) === 'string' && typeof(a) != null && typeof(a) != null && a != '' && b != '' &&  a.length < 50) {
     console.log("done");
     appData.expenses[a] = b;
   } else {
@@ -88,7 +88,7 @@ do {
   let a = prompt("Введите обязательную статью расходов в этом месяце?");
   let b = prompt("Во сколько обойдется?");
 
-  if ((typeof(a)) === 'string' && (typeof(a != null)) && (typeof(a != null)) && a != '' && b != '' &&  a.length < 50) {
+  if (typeof(a) === 'string' && typeof(a) != null && typeof(a) != null && a != '' && b != '' &&  a.length < 50) {
     console.log("done");
     appData.expenses[a] = b;
   } else {
